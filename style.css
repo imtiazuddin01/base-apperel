@@ -1,0 +1,140 @@
+body {
+  background: rgb(224, 221, 221);
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 110rem;
+  height: 70rem;
+  margin: 10rem auto;
+  background: rgb(235, 211, 193);
+  display: flex;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3),
+    -1rem -1rem 1rem rgba(0, 0, 0, 0.3);
+}
+header {
+  margin-top: 6rem;
+  margin-left: 13rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+}
+header div i {
+  font-size: 3.6rem;
+  color: darkgray;
+}
+header div h3 {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.img-section {
+  order: 3;
+}
+.img-section img {
+  width: 50rem;
+  height: 70rem;
+}
+
+.main-view {
+  margin-top: 25rem;
+  margin-left: -12.5rem;
+  margin-right: 8.5rem;
+}
+.main-view h1 {
+  font-size: 5rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.main-view .h1 {
+  font-weight: 300;
+  color: darkgray;
+}
+.main-view p {
+  font-size: 1.6rem;
+  color: grey;
+  word-spacing: 0.1rem;
+}
+.email {
+  position: relative;
+}
+.email input {
+  width: 35rem;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid darkgray;
+  border-radius: 5rem;
+  background: inherit;
+  outline: none;
+}
+.email .btn {
+  text-align: center;
+  padding: 0.7rem;
+  width: 6rem;
+  position: absolute;
+  top: 0;
+  left: 32rem;
+
+  border-radius: 3rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(228, 142, 44),
+    rgb(240, 77, 12),
+    rgb(184, 86, 7)
+  );
+  color: wheat;
+  box-shadow: 1px 1px 1px gray;
+}
+
+/* media queries*/
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    height: 75rem;
+  }
+  header {
+    margin: 2rem 0 2rem 7rem;
+  }
+  header div i {
+    font-size: 3rem;
+  }
+  header div h3 {
+    font-size: 1.5rem;
+  }
+  .img-section {
+    order: 2;
+  }
+  .img-section img {
+    width: 40rem;
+    height: 40;
+  }
+
+  .main-view {
+    order: 3;
+    text-align: center;
+    margin: 5rem 0;
+  }
+  .main-view h1 {
+    font-size: 3rem;
+  }
+  .main-view p {
+    font-size: 1.3rem;
+    padding: 2rem;
+  }
+  .email {
+    margin-bottom: 5rem;
+  }
+}
